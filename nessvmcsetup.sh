@@ -1,4 +1,4 @@
-#Ness VMS Server Setup Script
+#Ness VMS Client Setup Script
 #https://github.com/kvellaNess/NxVMS
 #Set Machine Hostname to Last 4 digits of Eth0
 macaddy=$(cat /sys/class/net/enp4s0/address | tr -d ':' | grep -o '....$')
