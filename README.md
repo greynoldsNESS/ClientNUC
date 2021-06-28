@@ -9,5 +9,6 @@ The following script will:
 4. Update Server OS
 5. Download & install Nx Client & Cockpit for RM.
 6. Download & Set NxWitness Wallpaper
-7. Requirements
-8. You have installed Ubuntu LTS 18.04.3 and above on your VMS Hardware
+
+Requirements
+You have installed Ubuntu LTS 18.04.3 and above on your VMS Hardware
