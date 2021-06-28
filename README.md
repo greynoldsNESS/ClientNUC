@@ -12,3 +12,6 @@ The following script will:
 
 Requirements
 You have installed Ubuntu LTS 18.04.3 and above on your VMS Hardware
+
+# To run this script please enter CTRL + ALT + T on your keyboard which should open a terminal window. 
+Enter "sudo wget -O - https://git.io/ClientNUC | bash 
