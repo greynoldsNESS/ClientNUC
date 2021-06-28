@@ -3,7 +3,7 @@ Script to be run on Client Nucs for the operation of NX witness servers
 
 The following script will:
 
-1. Set Auto Updates for Australian Servers
+1. Set Auto Updates for Client NUC's
 2. Delete unecessary pakages
 3. Install required dependencies
 4. Update Server OS
