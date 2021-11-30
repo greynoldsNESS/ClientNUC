@@ -1,8 +1,8 @@
 #Ness VMS Client Setup Script
 #https://github.com/kvellaNess/NxVMS
 #Set Machine Hostname to Last 4 digits of Eth0
-macaddy=$(cat /sys/class/net/enp4s0/address | tr -d ':' | grep -o '....$')
-sudo hostnamectl set-hostname NessVMS-$macaddy
+macaddy=$(cat /sys/class/net/enp3s0/address | tr -d ':' | grep -o '....$')
+sudo hostnamectl set-hostname AOLclient-$macaddy
 #Set Repo's to Australia
 sudo sed -i 's|http://archive.|http://au.archive.|g' /etc/apt/sources.list
 sudo apt update
@@ -39,7 +39,7 @@ echo ""
 echo -e "\e[7mDownload NxWitness\e[0m"
 echo ""
 echo ""
-wget "https://updates.networkoptix.com/default/32840/linux/nxwitness-client-4.2.0.32840-linux64.deb" -P ~/Downloads
+wget "https://updates.networkoptix.com/default/4.2.0.33832/linux/nxwitness-client-4.2.0.33832-linux64-patch.deb" -P ~/Downloads
 echo""
 echo""
 #Install NX Client
@@ -48,12 +48,12 @@ echo ""
 echo -e "\e[7mInstall NxWitness\e[0m"
 echo ""
 echo ""
-sudo gdebi --non-interactive ~/Downloads/nxwitness-client-4.2.0.32840-linux64.deb
+sudo gdebi --non-interactive ~/Downloads/nxwitness-client-4.2.0.33832-linux64-patch.deb
 echo "" 
 #Download Wallpaper
 echo -e "\e[7mSet Wallpaper\e[0m"
-sudo wget "https://github.com/kvellaNess/NxVMS/raw/master/wallpaper/20201009.NxBG.png" -P /opt/Ness/Wallpaper
-sudo wget "https://github.com/kvellaNess/NxVMS/raw/master/wallpaper/20201009.NxLock.png" -P /opt/Ness/Wallpaper
+sudo wget "https://github.com/kvellaNess/NxVMS/raw/master/wallpaper/20201009.NxBG.png" -P /opt/AOL/Wallpaper
+sudo wget "https://github.com/kvellaNess/NxVMS/raw/master/wallpaper/20201009.NxLock.png" -P /opt/AOL/Wallpaper
 #Set Wallpaper
 gsettings set org.gnome.desktop.background picture-uri 'file://///opt/Ness/Wallpaper/20201009.NxBG.png'
 gsettings set org.gnome.desktop.screensaver picture-uri 'file://///opt/Ness/Wallpaper/20201009.NxLock.png'
